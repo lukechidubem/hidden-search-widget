@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,500;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,900&family=Poppins:ital,wght@0,300;0,700;1,100;1,400;1,700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(127, 255, 165);
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  width: 50px;
+  background-color: black;
+  position: relative;
+  border-radius: 16px;
+  transition: 1s ease-in;
+}
+
+.search-container.active {
+  width: 350px;
+  transition: 1s ease-in;
+}
+
+.search-container input {
+  width: inherit;
+  border: 10px solid rgb(65, 59, 59);
+  height: 50px;
+  outline: none;
+  border-radius: 16px;
+  margin: 1px 0;
+}
+
+.search-container svg {
+  position: absolute;
+  font-size: 30px;
+  left: 25%;
+  top: 25%;
+  outline: none;
+  cursor: pointer;
+  transition: 1s ease-in;
+}
+.search-container.active svg {
+  position: absolute;
+  font-size: 30px;
+  left: 87%;
+  top: 25%;
+  transition: 1s ease-in;
+}
